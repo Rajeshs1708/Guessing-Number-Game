@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="note">
+        <h4>Note :</h4>
+        <p>1. If a digit exist in the computer number in the same location, the computer will
+            report "+"</p>
+        <p>2. If a digit exist but not in the same location, the computer will report "-"</p>
+        <p>3. If a digit doesn't exists at all, the computer will report "*"</p>
+
+    </div>
+    <div class="container">
+        <h3>Guess a Number between 1000 - 9999</h3>
+        <input type="number" id="guess" placeholder="Number">
+        <br>
+        <button onclick="play()" id="my_btn">Guess</button>
+        <div>
+            <button onclick="newGame()" id="new_game_btn">Start New Game</button>
+            <button onclick="restart()" id="new_game_btn">Restart</button>
+        </div>
+        <p id="message1">No. of Guesses : 0</p>
+        <h3 id="score">Your Score is : 0</h3>
+        <p id="message2">Guessed Numbers are : None</p>
+        <p id="message3"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
